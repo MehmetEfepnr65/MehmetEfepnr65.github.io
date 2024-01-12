@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    ;
+    grid-template-rows: 100px 100vh;
+    gap: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 100%);
+    
+}
+
+header > img{
+    flex: 0 0 2%;
+    height: 30px;
+}
+
+header > span{
+    display: flex;
+    flex: 0 1 78%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header > span > a{
+    flex: 0 0 17%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+header > span > a:hover{
+    text-decoration: none;
+    color: #777777;
+}
+
+form{
+    display: flex;
+    gap: 5px;
+}
+
+header > form > input[type=text]{
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0px solid white;
+    background-color: rgb(201, 187, 187);
+}
+
+form > input[type=text]:hover{
+    background-color: white;
+}
+
+form > input[type=button]{
+    flex: 0 0 35%;
+    border-radius: 10px;
+    border: 0px solid rgb(252, 252, 252);
+    background-color: rgb(201, 187, 187);
+    color: rgb(129, 124, 124);
+}
+
+form > input[type=button]:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+main > div{
+    flex: 0 0 24%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
